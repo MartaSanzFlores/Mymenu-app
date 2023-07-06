@@ -1,11 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Playball&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>MyMenu</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="mymenu_header">
+        <!-- NAV -->
+        
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <a class="mymenu_logo navbar-brand ps-4" href="#index.html ">MyMenu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Cette partie va automatique être masquée en version mobile -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav m-auto">
+                            <li class="mymenu_navitem nav-item active m-auto">
+                                <a class="nav-link" href="#recipe.html">
+                                    <figure class="figure">
+                                        <img src="../images/home.svg" class="figure-img img-fluid rounded" alt="..." >
+                                        <figcaption class="figure-caption text-center">Accueil</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mymenu_navitem nav-item m-auto">
+                                <a class="nav-link" href="#recipe.html">
+                                    <figure class="figure">
+                                        <img src="../images/recipe.svg" class="figure-img img-fluid rounded" alt="..." >
+                                        <figcaption class="figure-caption text-center">Recettes</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mymenu_navitem nav-item m-auto">
+                                <a class=" nav-link" href="#menu.html">
+                                    <figure class="figure">
+                                        <img src="../images/menu.svg" class="figure-img img-fluid rounded" alt="...">
+                                        <figcaption class="figure-caption text-center">Menus</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="mymenu_navitem nav-item m-auto">
+                                <a class=" nav-link" href="#conexion.html">
+                                    <figure class="figure">
+                                        <img src="../images/user.svg" class="figure-img img-fluid rounded" alt="...">
+                                        <figcaption class="figure-caption text-center">Se connecter</figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+        
+    </header>
+    <main>
+        <!-- Description section  -->
+        <section>
+            <div class="container-fluid">
+                <p class="justify-content-center m-5 px-5 text-center">Si vous aimez cuisiner et préparer de bons repas pour votre famille et vos amis, MyMenu sera votre meilleur allié. Avec MyMenu, vous pouvez inclure vos propres recettes et organiser des menus personnalisés avec la liste de courses pour être bien organisé et bien manger tout au long de la semaine.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+                <h3 class="mx-auto">DECOUVREZ LA RECETTE DE LA JOURNEE !</h3>
+
+                <div class="card mx-auto my-4" style="max-width: 800px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/img_recette.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Nom de la recette</h5>
+                        <p class="card-text">Extrait du description de la recette</p>
+                        <p class="card-text"><small class="text-body-secondary">Click pour voir !</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Instructions section  -->
+        <section class="d-flex flex-column justify-content-center m-5">
+            <hr class="hr hr-blurry" />
+            <h2 class="mx-auto pt-2 mymenu_title">Comment ça marche :</h2>
+            <hr class="hr hr-blurry" />
+            <div class="container-fluid d-flex flex-row justify-content-around">
+                <div class="mymenu_card card">
+                    <h3 class="card-header text-center">CREEZ UN PROFIL OU CONNECTEZ VOUS</h3>
+                    <div class="card-body d-flex align-items-center">
+                      <blockquote class="blockquote">
+                        <p class="mb-0">Cliquez sur l'icône “Me connecter” pour créer un profil ou se connecter pour commencer à profiter de MyMenu.</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <img src="../images/arrow.svg" class="img-fluid rounded-start" alt="..." style="width: 10%; height: auto;">
+                  <img src="../images/user.svg" class="img-fluid rounded-start mymenu_icon" alt="..." style="width: 20%; height: auto;">
+            </div>
+            <div class="container-fluid d-flex flex-row-reverse justify-content-around">
+                <div class="mymenu_card card">
+                    <h3 class="card-header text-center">VOIR LA LISTE DES RECETTES</h3>
+                    <div class="card-body d-flex align-items-center">
+                      <blockquote class="blockquote">
+                        <p class="mb-0">Cliquez sur l'icône des recettes, vous verrez une liste de toutes vos recettes.</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <img src="../images/arrow.svg" class="mymenu_arrow_rotate img-fluid rounded-start" alt="..." style="width: 10%; height: auto;">
+                  <img src="../images/recipe.svg" class="img-fluid rounded-start mymenu_icon" alt="..." style="width: 20%; height: auto;">
+            </div>
+            <div class="container-fluid d-flex flex-row justify-content-around">
+                <div class="mymenu_card card">
+                    <h3 class="card-header text-center">AJOUTER UNE RECETTE</h3>
+                    <div class="card-body d-flex align-items-center">
+                      <blockquote class="blockquote">
+                        <p class="mb-0">Cliquez sur le bouton “Ajouter une Recette” pour inclure votre première recette, vous pourrez ajouter les ingrédients, les étapes nécessaires pour la réaliser et les étiquettes pour l'identifier !</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <img src="../images/arrow.svg" class="img-fluid rounded-start" alt="..." style="width: 10%; height: auto;">
+                  <button type="button" class="mymenu_button_exemple btn btn-dark my-auto">Ajouter une recette</button>
+            </div>
+            <div class="container-fluid d-flex flex-row-reverse justify-content-around">
+                <div class="mymenu_card card">
+                    <h3 class="card-header text-center">CREER VOTRE MENU PERSONALISE ET VOTRE LISTE DE COURSES POUR LA SEMAINE</h3>
+                    <div class="card-body d-flex align-items-center">
+                      <blockquote class="blockquote">
+                        <p class="mb-0">Cliquez sur l'icône des menus pour creer votre menu personalise, vous pourriez le creer au hasard ou choisir vous meme les recettes que vous preferez. Un fois le menu est crée vous pourriez visualicer la liste et l'imprimer !</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <img src="../images/arrow.svg" class="mymenu_arrow_rotate img-fluid rounded-start" alt="..." style="width: 10%; height: auto;">
+                  <img src="../images/menu.svg" class="img-fluid rounded-start mymenu_icon" alt="..." style="width: 20%; height: auto;">
+            </div>
+            <div class="container-fluid d-flex flex-row justify-content-around">
+                <div class="mymenu_card card ">
+                    <h3 class="card-header text-center">VISUALISER LES DETAILS DE VOS RECETTES</h3>
+                    <div class="card-body d-flex align-items-center">
+                      <blockquote class="blockquote">
+                        <p class="mb-0">En cliquant sur une recette, vous obtiendrez les détails pour commencer à cuisiner. Savourez votre repas !</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <img src="../images/arrow.svg" class="img-fluid rounded-start" alt="..." style="width: 10%; height: auto;">
+                  <div class="card mx-auto my-auto" style="max-width: 50%; max-height:50%">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/img_recette.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Nom de la recette</h5>
+                        <p class="card-text">Extrait du description de la recette</p>
+                        <p class="card-text"><small class="text-body-secondary">Click pour voir !</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="mymenu_footer">
+        <div class="d-flex justify-content-center">
+            <ul class="navbar-nav my-3 d-flex flex-row">
+                <li class="nav-item active mx-4">
+                <a class="nav-link" href="#index.html">Se connecter</a>
+                </li>
+                <li class="nav-item mx-4">
+                <a class="nav-link" href="#recettes.html">Nous contacter</a>
+                </li>
+                <li class="nav-item mx-4">
+                <a class="nav-link" href="#menus.html">Mentions Légales</a>
+                </li>
+            </ul>
+        </div>   
+    </footer>
+
     
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
+
 </html>

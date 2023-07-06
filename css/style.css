@@ -1,0 +1,58 @@
+body {
+    font-size: 1vw;
+    font-family: 'Kalam', cursive;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 1.7vw;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+a { padding: 25%;}
+
+.mymenu_logo {
+    font-family: 'Playball', cursive;
+    font-size: 3vw;
+}
+
+.mymenu_header, .mymenu_footer {
+    background-color: #6BAB87;
+}
+
+.mymenu_navitem {
+    
+    width: 10%;
+}
+
+.mymenu_card {
+    width: 50%;
+    margin: 5% 0% 5% 0%;
+}
+
+.mymenu_arrow_rotate {
+    transform: rotate(180deg);
+}
+
+.mymenu_title {
+    color: #0C532B;
+}
+
+.mymenu_button_exemple {
+    background-color: #0C532B;
+}
+
+
+
+
+
