@@ -48,13 +48,16 @@ a { padding: 25%;}
     color: #0C532B;
 }
 
-.mymenu_button_exemple {
+.mymenu_button {
     background-color: #0C532B;
+    color: #ffff;
 }
 
 .mymenu_img_recette {
     width: 50%;
 }
+
+
 
 
 
