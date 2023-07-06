@@ -3,6 +3,10 @@ body {
     font-family: 'Kalam', cursive;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+  }
+
 h1 {
     font-size: 4vw;
 }
@@ -19,7 +23,8 @@ p {
     font-size: 1.2vw;
 }
 
-a { padding: 25%;}
+a { padding: 25%;
+}
 
 .mymenu_logo {
     font-family: 'Playball', cursive;
@@ -27,7 +32,7 @@ a { padding: 25%;}
 }
 
 .mymenu_header, .mymenu_footer {
-    background-color: #6BAB87;
+    background-color: #7fb898;
 }
 
 .mymenu_navitem {
@@ -51,11 +56,45 @@ a { padding: 25%;}
 .mymenu_button {
     background-color: #0C532B;
     color: #ffff;
+    border: none;
+}
+
+.mymenu_button:hover {
+    background-color: #eeeeee;
+    color: #0C532B;
 }
 
 .mymenu_img_recette {
     width: 50%;
 }
+
+.mymenu_login {
+    width: 40%;
+    margin: 3% auto;
+}
+
+.mymenu_linklogin.active, .mymenu_check{
+    background-color: #0C532B !important;
+}
+
+.mymenu_linklogin {
+    background-color: #eeeeee;
+    color: black;
+}
+
+.mymenu_linklogin:hover, .mymenu_link:hover {
+    color: #0C532B;
+}
+
+.mymenu_add-recipe {
+    background-color: #7fb898;
+    padding: 5%;
+}
+
+.mymenu_link {
+    color: #4d4a4a;
+}
+
 
 
 
