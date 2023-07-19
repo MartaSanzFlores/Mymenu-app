@@ -1,11 +1,18 @@
+
 body {
     font-size: 1vw;
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursive; 
+    min-height: 100vh;
+}
+
+main {
+    height: 100%;
 }
 
 body::-webkit-scrollbar{
     display: none;
   }
+
 
 h1 {
     font-size: 4vw;
@@ -15,11 +22,11 @@ h2 {
     font-size: 3vw;
 }
 
-h3 {
+h3, .mymenu_card-title {
     font-size: 1.7vw;
 }
 
-p {
+p, .mymenu_form {
     font-size: 1.2vw;
 }
 
@@ -57,6 +64,7 @@ a { padding: 25%;
     background-color: #0C532B;
     color: #ffff;
     border: none;
+    font-size: 1.2vw;
 }
 
 .mymenu_button:hover {
@@ -70,7 +78,8 @@ a { padding: 25%;
 
 .mymenu_login {
     width: 40%;
-    margin: 3% auto;
+    height: auto;
+    
 }
 
 .mymenu_linklogin.active, .mymenu_check{
