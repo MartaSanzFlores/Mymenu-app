@@ -27,52 +27,51 @@
     <header class="mymenu_header">
         <!-- NAV -->
         
-            <nav class="navbar navbar-expand-md navbar-light py-0">
-                <div class="container-fluid">
-                    <a class="mymenu_logo navbar-brand ps-4" href="#index.html ">MyMenu</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Cette partie va automatique être masquée en version mobile -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav m-auto">
-                            <li class="mymenu_navitem nav-item active m-auto">
-                                <a class="nav-link p-0" href="index.html">
-                                    <figure class="figure" style="width: 80%; height: auto;">
-                                        <img src="../images/home.svg" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption text-center">Accueil</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="mymenu_navitem nav-item m-auto">
-                                <a class="nav-link p-0" href="recettes.html">
-                                    <figure class="figure" style="width: 80%; height: auto;">
-                                        <img src="../images/recipe.svg" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption text-center">Recettes</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="mymenu_navitem nav-item m-auto">
-                                <a class=" nav-link p-0" href="menu.html">
-                                    <figure class="figure" style="width: 80%; height: auto;">
-                                        <img src="../images/menu.svg" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption text-center">Menus</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="mymenu_navitem nav-item m-auto">
-                                <a class=" nav-link p-0" href="login.html">
-                                    <figure class="figure" style="width: 80%; height: auto;">
-                                        <img src="../images/user.svg" class="figure-img img-fluid rounded" alt="...">
-                                        <figcaption class="figure-caption text-center">Se connecter</figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+
+        <nav class="navbar navbar-expand-md navbar-light py-0">
+          <a class="mymenu_logo navbar-brand ps-4" href="#index.html ">MyMenu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Hiden in version mobile -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav mx-auto mt-2 d-flex justify-content-center">
+                  <li class="mymenu_navitem nav-item active m-auto" style="width: 2%; height: auto;">
+                      <a class="nav-link p-0 d-block" href="index.html">
+                          <figure class="figure">
+                              <img src="../images/home.svg" class="figure-img img-fluid rounded m-0" alt="...">
+                              <figcaption class="figure-caption text-center">Accueil</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+                  <li class="mymenu_navitem nav-item m-auto" style="width: 2%; height: auto;">
+                      <a class="nav-link p-0" href="recettes.html">
+                          <figure class="figure d-inline-block" >
+                              <img src="../images/recipe.svg" class="figure-img img-fluid rounded m-0" alt="...">
+                              <figcaption class="figure-caption text-center">Recettes</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+                  <li class="mymenu_navitem nav-item m-auto" style="width: 2%; height: auto;">
+                      <a class=" nav-link p-0" href="menu.html">
+                          <figure class="figure">
+                              <img src="../images/menu.svg" class="figure-img img-fluid rounded m-0" alt="...">
+                              <figcaption class="figure-caption text-center">Menus</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+                  <li class="mymenu_navitem nav-item m-auto" style="width: 2%; height: auto;">
+                      <a class=" nav-link p-0" href="login.html">
+                          <figure class="figure">
+                              <img src="../images/user.svg" class="figure-img img-fluid rounded m-0" alt="...">
+                              <figcaption class="figure-caption text-center">Conexion</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+  </nav>
     </header>
 <main>
     <!-- Menu Section  -->
@@ -80,176 +79,172 @@
 <section class="px-3">
     <div class="d-flex align-items-baseline my-1">
         <p>Cliquez sur "Créer mon menu" pour créer un menu aléatoire, que vous pourrez ensuite modifier à votre guise.</p>
-        <button type="button" class="mymenu_button btn btn-dark m-4" data-toggle="modal" data-target="#myModal">Créer mon menu</button>
+        <button type="button" class="mymenu_button btn btn-dark m-4" >Créer mon menu</button>
+        <a href="menus.html" class="mymenu_button btn btn-dark m-4" >Voir mes menus enregistres</a>
     </div>
     <div class="row mx-4">
+   
         <div class="col p-0">
-        </div>
-        <div class="col p-0">
-            <h4>Lundi</h4>
-        </div>
-        <div class="col p-0">
+          <h4>Lundi</h4>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mymenu_card-title">Nom de recette</h5>
+              <p class="card-text">Categorie: Salade</p>
+              <div class="d-flex justify-content-between">
+                <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                <button class="btn p-0"><i class="fa fa-trash"></i></button>
+              </div>
+            </div>
+          </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="mymenu_card-title">Nom de recette</h5>
+                <p class="card-text">Categorie: Salade</p>
+                <div class="d-flex justify-content-between">
+                <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                <button class="btn p-0"><i class="fa fa-trash"></i></button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0">
             <h4>Mardi</h4>
-        </div>
-        <div class="col p-0">
-            <h4>Mercredi</h4>
-        </div>
-        <div class="col p-0">
-            <h4>Jeudi</h4>
-        </div>
-        <div class="col p-0">
-            <h4>Vendredi</h4>
-        </div>
-        <div class="col p-0">
-            <h4>Samedi</h4>
-        </div>
-        <div class="col p-0">
-            <h4>Dimanche</h4>
-        </div>
-    </div>
-    <div class="row mx-4">
-        <div class="col p-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="mymenu_card-title">Midi</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col p-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="mymenu_card-title">Nom de recette</h5>
-              <p class="card-text">Categorie: Salade</p>
-              <button class="btn p-0"><i class="fa fa-edit"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="col p-0">
             <div class="card">
               <div class="card-body">
                 <h5 class="mymenu_card-title">Nom de recette</h5>
                 <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                <div class="d-flex justify-content-between">
+                  <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                  <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="mymenu_card-title">Nom de recette</h5>
+                  <p class="card-text">Categorie: Salade</p>
+                  <div class="d-flex justify-content-between">
+                  <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                  <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
+            <div class="col p-0">
+              <h4>Mercredi</h4>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="mymenu_card-title">Nom de recette</h5>
+                  <p class="card-text">Categorie: Salade</p>
+                  <div class="d-flex justify-content-between">
+                    <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                    <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="mymenu_card-title">Nom de recette</h5>
+                    <p class="card-text">Categorie: Salade</p>
+                    <div class="d-flex justify-content-between">
+                    <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                    <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                  </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-    </div>
-    <div class="row mx-4">
-        <div class="col p-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="mymenu_card-title">Soir</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col p-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="mymenu_card-title">Nom de recette</h5>
-              <p class="card-text">Categorie: Salade</p>
-              <button class="btn p-0"><i class="fa fa-edit"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col p-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="mymenu_card-title">Nom de recette</h5>
-                <p class="card-text">Categorie: Salade</p>
-                <button class="btn p-0"><i class="fa fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
+              <div class="col p-0">
+                <h4>Jeudi</h4>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="mymenu_card-title">Nom de recette</h5>
+                    <p class="card-text">Categorie: Salade</p>
+                    <div class="d-flex justify-content-between">
+                      <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                      <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="mymenu_card-title">Nom de recette</h5>
+                      <p class="card-text">Categorie: Salade</p>
+                      <div class="d-flex justify-content-between">
+                      <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                      <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-0">
+                  <h4>Vendredi</h4>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="mymenu_card-title">Nom de recette</h5>
+                      <p class="card-text">Categorie: Salade</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                        <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="mymenu_card-title">Nom de recette</h5>
+                        <p class="card-text">Categorie: Salade</p>
+                        <div class="d-flex justify-content-between">
+                        <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                        <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col p-0">
+                    <h4>Samedi</h4>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="mymenu_card-title">Nom de recette</h5>
+                        <p class="card-text">Categorie: Salade</p>
+                        <div class="d-flex justify-content-between">
+                          <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                          <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="mymenu_card-title">Nom de recette</h5>
+                          <p class="card-text">Categorie: Salade</p>
+                          <div class="d-flex justify-content-between">
+                          <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                          <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col p-0">
+                      <h4>Dimache</h4>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="mymenu_card-title">Nom de recette</h5>
+                          <p class="card-text">Categorie: Salade</p>
+                          <div class="d-flex justify-content-between">
+                            <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                            <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="mymenu_card-title">Nom de recette</h5>
+                            <p class="card-text">Categorie: Salade</p>
+                            <div class="d-flex justify-content-between">
+                            <button class="btn p-0"><i class="fa fa-edit"></i></button>
+                            <button class="btn p-0"><i class="fa fa-trash"></i></button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
     </div>
     <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex">
@@ -263,7 +258,7 @@
 
 </main>
 <!-- FOOTER -->
-<footer class="mymenu_footer navbar navbar-fixed-bottom d-flex justify-content-center">
+<footer class="mymenu_footer footer d-flex justify-content-center">
     <div class="d-flex justify-content-center">
         <ul class="navbar-nav my-3 d-flex flex-row">
             <li class="nav-item active mx-4">

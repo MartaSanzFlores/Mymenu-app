@@ -1,0 +1,47 @@
+{
+  "width": 468,
+  "height": 379,
+  "cx": [
+    [ "Steps", 174 ],
+    [ "Ingredients", 49 ],
+    [ "FOLLOWS", 174 ],
+    [ "CREATE", 309 ],
+    [ "HAS", 49 ],
+    [ "Recipe", 174 ],
+    [ "User", 309 ],
+    [ "GENERATE", 419 ],
+    [ "Categories", 49 ],
+    [ "IS CLASSED BY", 174 ],
+    [ "BELONGS TO", 309 ],
+    [ "Menu", 419 ]
+  ],
+  "cy": [
+    [ "Steps", 43 ],
+    [ "Ingredients", 127 ],
+    [ "FOLLOWS", 127 ],
+    [ "CREATE", 127 ],
+    [ "HAS", 236 ],
+    [ "Recipe", 236 ],
+    [ "User", 236 ],
+    [ "GENERATE", 236 ],
+    [ "Categories", 345 ],
+    [ "IS CLASSED BY", 345 ],
+    [ "BELONGS TO", 345 ],
+    [ "Menu", 345 ]
+  ],
+  "shift": [
+    [ "FOLLOWS,Recipe,0", 0 ],
+    [ "FOLLOWS,Steps,0", 0 ],
+    [ "CREATE,User,0", 0 ],
+    [ "CREATE,Recipe,0", 0 ],
+    [ "HAS,Recipe,0", 0 ],
+    [ "HAS,Ingredients,0", 0 ],
+    [ "GENERATE,User,0", 0 ],
+    [ "GENERATE,Menu,0", 0 ],
+    [ "IS CLASSED BY,Recipe,0", 0 ],
+    [ "IS CLASSED BY,Categories,0", 0 ],
+    [ "BELONGS TO,Recipe,0", 0 ],
+    [ "BELONGS TO,Menu,0", 0 ]
+  ],
+  "ratio": []
+}
