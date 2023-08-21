@@ -1,0 +1,19 @@
+GENERATE, 0N USER, 11 MENU
+MENU: num.menu, name
+BELONGS TO, 0N RECIPE, 1N MENU
+:
+
+USER: num.user, userName, email, password, role
+CREATE, 0N USER, 11 RECIPE
+RECIPE: num.recipe, name, persons, description, status, url
+FOLLOW, 1N RECIPE, 11 STEP
+
+:
+HAS, 1N RECIPE, 1N INGREDIENT
+IS CLASED BY, 1N RECIPE, 0N CATEGORY
+STEP: num.step, description
+
+:
+INGREDIENT: num.ingredient, name, url
+CATEGORY: num.category, name
+:
