@@ -43,6 +43,10 @@ class Recipe
     #[ORM\ManyToMany(targetEntity: Menu::class, mappedBy: 'recipes')]
     private Collection $menus;
 
+    #[ORM\ManyToOne(inversedBy: 'recipes')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
+
     public function __construct()
     {
         $this->steps = new ArrayCollection();
@@ -217,6 +221,18 @@ class Recipe
         if ($this->menus->removeElement($menu)) {
             $menu->removeRecipe($this);
         }
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): static
+    {
+        $this->user = $user;
 
         return $this;
     }
