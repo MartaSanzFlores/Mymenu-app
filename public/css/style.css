@@ -70,7 +70,7 @@ a { padding: 25%;
     background-color: #0C532B;
     color: #ffff;
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .mymenu_button:hover {
@@ -123,6 +123,13 @@ a { padding: 25%;
 .active>.page-link{
     background-color: #7fb898 !important;
     border: solid #0C532B 1px;
+}
+
+#form_name{
+    border: solid rgb(207, 202, 202) 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 3%;
 }
 
 

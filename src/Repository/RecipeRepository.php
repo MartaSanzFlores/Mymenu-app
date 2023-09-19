@@ -32,13 +32,15 @@ class RecipeRepository extends ServiceEntityRepository
        ;
    }
 
-//    public function findOneBySomeField($value): ?Recipe
-//    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+    /**
+    * doctrine query to find recipe by name
+    */
+    public function paginationfindByName($submitName)
+    {
+        return $this->createQueryBuilder('r')
+            ->where('r.name LIKE :submitName')
+            ->setParameter('submitName', '%'.$submitName.'%')
+            ->getQuery()
+        ;
+    }
 }

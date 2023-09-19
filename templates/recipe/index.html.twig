@@ -7,15 +7,14 @@
         <!-- Recipes Section  -->
         <section class="row mx-2">
             <div class="col-6 col-md-4 ">
-                <form class="my-4">
+                {{ form_start(filterForm, {'attr': {'novalidate': 'novalidate'}}) }}
                     <div class="input-group rounded row-auto">
-                        <input type="search" class="col-9 col-md-6 rounded" placeholder="Nom de la recette"
-                            aria-label="Search" aria-describedby="search-addon" />
-                        <span class="input-group-text border-0 p-0" id="search-addon">
+                        {{ form_widget(filterForm, {'attr': {'class': 'rounded my-3 h-100'}}) }}
+                        <span class="input-group-text border-0 p-0 my-3" id="search-addon">
                             <button type="submit" class="mymenu_button btn h-100"><i class="fas fa-search"></i></button>
                         </span>
                     </div>
-                </form>
+                {{ form_end(filterForm) }}
                 <form>
                     <div class="form-group col-md-6 col-12">
                         <label class="control-label mymenu_form" for="exampleFormControlSelect1">Choisir une categorie</label>
