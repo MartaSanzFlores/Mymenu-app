@@ -47,7 +47,7 @@
         <header class="mymenu_header">
             <!-- NAV -->
             <nav class="navbar navbar-expand-md navbar-light py-0">
-                    <a class="mymenu_logo navbar-brand ps-4" href="#index.html ">MyMenu</a>
+                    <a class="mymenu_logo navbar-brand ps-4" href="{{ path('app_home') }}">MyMenu</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav mx-auto mt-2 d-flex justify-content-center">
                             <li class="mymenu_navitem nav-item active m-auto" style="width: 2%; height: auto;">
-                                <a class="nav-link p-0 d-block" href="index.html">
+                                <a class="nav-link p-0 d-block" href="{{ path('app_home') }}">
                                     <figure class="figure">
                                         <img src="{{ asset('images/home.svg') }}" class="figure-img img-fluid rounded m-0" alt="...">
                                         <figcaption class="figure-caption text-center">Accueil</figcaption>
@@ -64,7 +64,7 @@
                                 </a>
                             </li>
                             <li class="mymenu_navitem nav-item m-auto" style="width: 2%; height: auto;">
-                                <a class="nav-link p-0" href="recettes.html">
+                                <a class="nav-link p-0" href="{{ path('app_recipe_list') }}">
                                     <figure class="figure d-inline-block" >
                                         <img src="{{ asset('images/recipe.svg') }}" class="figure-img img-fluid rounded m-0" alt="...">
                                         <figcaption class="figure-caption text-center">Recettes</figcaption>

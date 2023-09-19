@@ -111,6 +111,20 @@ a { padding: 25%;
     color: #4d4a4a;
 }
 
+.page-link{
+    color: #0C532B;
+}
+
+.page-link:hover{
+    background-color: #0C532B;
+    color: #eeeeee;
+}
+
+.active>.page-link{
+    background-color: #7fb898 !important;
+    border: solid #0C532B 1px;
+}
+
 
 
 
