@@ -1,0 +1,120 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 1vw;
+  }
+
+body {
+    margin-bottom: 10%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3, .mymenu_card-title {
+    font-size: 1.3rem;
+}
+
+p, .mymenu_form, li, label, input, a {
+    font-size: 1rem;
+}
+
+a { padding: 25%;
+}
+
+.mymenu_logo {
+    font-family: 'Playball', cursive;
+    font-size: 2rem;
+}
+
+.mymenu_header, .mymenu_footer {
+    background-color: #7fb898;
+}
+
+.mymenu_navitem {
+    
+    width: 10%;
+}
+
+.mymenu_card {
+    width: 50%;
+    margin: 5% 0% 5% 0%;
+}
+
+.mymenu_arrow_rotate {
+    transform: rotate(180deg);
+}
+
+.mymenu_title {
+    color: #0C532B;
+}
+
+.mymenu_button {
+    background-color: #0C532B;
+    color: #ffff;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.mymenu_button:hover {
+    background-color: #eeeeee;
+    color: #0C532B;
+}
+
+.mymenu_img_recette {
+    width: 40%;
+} 
+
+
+
+
+.mymenu_login {
+    width: 40%;    
+}
+
+.mymenu_linklogin.active, .mymenu_check{
+    background-color: #0C532B !important;
+}
+
+.mymenu_linklogin {
+    background-color: #eeeeee;
+    color: black;
+}
+
+.mymenu_linklogin:hover, .mymenu_link:hover {
+    color: #0C532B;
+}
+
+.mymenu_add-recipe {
+    background-color: #7fb898;
+    padding: 5%;
+}
+
+.mymenu_link {
+    color: #4d4a4a;
+}
+
+
+
+
+
+
+
+

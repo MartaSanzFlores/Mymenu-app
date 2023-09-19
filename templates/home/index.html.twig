@@ -1,0 +1,116 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrap">
+        <main id="main" class="container clear-top">
+            <!-- Home Container  -->
+            <div class="container-fluid">
+                <!-- Description section  -->
+                <section>
+                    <div class="container-fluid d-flex flex-column justify-content-center">
+                        <h1 class="mx-auto mt-5">Trouvez et creéz vos propres recettes et menus facilement !</h1>
+                        <p class="m-md-5 m-3 px-md-5 text-center">Si vous aimez cuisiner et préparer de bons repas pour votre famille et vos amis, MyMenu sera votre meilleur allié. Avec MyMenu, vous pouvez inclure vos propres recettes et organiser des menus personnalisés avec la liste de courses pour être bien organisé et bien manger tout au long de la semaine.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                        <h2 class="mx-auto mb-3">DECOUVREZ LA RECETTE DE LA JOURNEE !</h2>
+
+                        <div class="card mx-auto my-4 col-8">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/img_recipe.jpg') }}" class="img-fluid rounded-start h-100" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h3 class="mymenu_card-title">{{ homeRecipe.name }}</h3>
+                                        <p class="card-text">{{ homeRecipe.description|slice(0, 150) }}...</p>
+                                        <p class="card-text"><small class="text-body-secondary"><a
+                                                    class="link-secondary link-underline link-underline-opacity-0 p-0"
+                                                    href="recette.html">Click pour voir !</a></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Instructions section  -->
+                <section class="d-flex flex-column justify-content-center m-md-5">
+                    <hr class="hr hr-blurry" />
+                    <h2 class="mx-auto pt-2 mymenu_title">Comment ça marche :</h2>
+                    <hr class="hr hr-blurry" />
+                    <div class="container-fluid d-flex flex-row justify-content-around">
+                        <div class="mymenu_card card">
+                            <h3 class="card-header text-center">CREEZ UN PROFIL OU CONNECTEZ VOUS</h3>
+                            <div class="card-body d-flex align-items-center p-2 p-md-3">
+                                <p class="mb-0">Cliquez sur l'icône “Me connecter” pour créer un profil ou se connecter
+                                    pour commencer à profiter de MyMenu.</p>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/arrow.svg') }}" class="img-fluid rounded-start" alt="..."
+                            style="width: 10%; height: auto;">
+                        <img src="{{ asset('images/user.svg') }}" class="img-fluid rounded-start mymenu_icon" alt="..."
+                            style="width: 20%; height: auto;">
+                    </div>
+                    <div class="container-fluid d-flex flex-row-reverse justify-content-around">
+                        <div class="mymenu_card card">
+                            <h3 class="card-header text-center">VOIR LA LISTE DES RECETTES</h3>
+                            <div class="card-body d-flex align-items-center p-2 p-md-3">
+                                <p class="mb-0">Cliquez sur l'icône des recettes, vous verrez une liste de toutes vos
+                                    recettes.</p>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/arrow.svg') }}" class="mymenu_arrow_rotate img-fluid rounded-start" alt="..."
+                            style="width: 10%; height: auto;">
+                        <img src="{{ asset('images/recipe.svg') }}" class="img-fluid rounded-start mymenu_icon" alt="..."
+                            style="width: 20%; height: auto;">
+                    </div>
+                    <div class="container-fluid d-flex flex-row justify-content-around">
+                        <div class="mymenu_card card">
+                            <h3 class="card-header text-center">AJOUTER UNE RECETTE</h3>
+                            <div class="card-body d-flex align-items-center p-2 p-md-3">
+                                <p class="mb-0">Cliquez sur le bouton “Ajouter une Recette” pour inclure votre première
+                                    recette, vous pourrez ajouter les ingrédients, les étapes nécessaires pour la
+                                    réaliser et les étiquettes pour l'identifier !</p>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/arrow.svg') }}" class="img-fluid rounded-start" alt="..."
+                            style="width: 10%; height: auto;">
+                        <div class="d-flex col-3">
+                            <button type="button" class="mymenu_button btn btn-dark my-auto btn-block">Ajouter une
+                                recette</button>
+                        </div>
+                    </div>
+                    <div class="container-fluid d-flex flex-row-reverse justify-content-around">
+                        <div class="mymenu_card card">
+                            <h3 class="card-header text-center">CREER VOTRE MENU PERSONALISE ET VOTRE LISTE DE COURSES
+                                POUR LA SEMAINE</h3>
+                            <div class="card-body d-flex align-items-center p-2 p-md-3">
+                                <p class="mb-0">Cliquez sur l'icône des menus pour creer votre menu personalise, vous
+                                    pourriez le creer au hasard ou choisir vous meme les recettes que vous preferez. Un
+                                    fois le menu est crée vous pourriez visualicer la liste et l'imprimer !</p>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/arrow.svg') }}" class="mymenu_arrow_rotate img-fluid rounded-start" alt="..."
+                            style="width: 10%; height: auto;">
+                        <img src="{{ asset('images/menu.svg') }}" class="img-fluid rounded-start mymenu_icon" alt="..."
+                            style="width: 20%; height: auto;">
+                    </div>
+                    <div class="container-fluid d-flex flex-row justify-content-around align-items-center">
+                        <div class="mymenu_card card ">
+                            <h3 class="card-header text-center">VISUALISER LES DETAILS DE VOS RECETTES</h3>
+                            <div class="card-body d-flex align-items-center p-2 p-md-3">
+                                <p class="mb-0">En cliquant sur une recette, vous obtiendrez les détails pour commencer
+                                    à cuisiner. Savourez votre repas !</p>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/arrow.svg') }}" class="img-fluid rounded-start" alt="..."
+                            style="width: 10%; height: auto;">
+                        <img src="{{ asset('images/recipe_exp.jpg') }}" class="img-fluid rounded-start" alt="..."
+                            style="width: 50%; height: 90%;">
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+{% endblock %}
