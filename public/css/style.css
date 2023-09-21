@@ -132,6 +132,13 @@ a { padding: 25%;
     padding: 3%;
 }
 
+#form_Category{
+    border: solid rgb(207, 202, 202) 1px;
+    border-radius: 5px;
+    padding: 3%;
+    width: 100%;
+}
+
 
 
 
