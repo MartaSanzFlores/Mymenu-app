@@ -5,12 +5,6 @@
 
 {% block javascripts %}
 
-	{# // <script>
-		// 	document.getElementById('my-form').addEventListener('click', function () {
-	    //     document.getElementById('my-form').submit();
-	    //     });
-		// </script> #}
-
 {% endblock %}
 
 {% block body %}
@@ -29,13 +23,13 @@
 				</div>
 				{{ form_end(filterForm) }}
 
-				{# TODO #}
-				{# {{ form_start(categoryFilterForm, {'attr': {'novalidate': 'novalidate'}}) }}
+				{# TODO Creer de ...Type pour le forms#}
+				{{ form_start(categoryFilterForm, {'attr': {'novalidate': 'novalidate'}}) }}
 				<div class="form-group col-md-6 col-12">
 					{{ form_widget(categoryFilterForm, {'attr': {'class': 'rounded my-3 h-100'}}) }}
 				</div>
-				<button type="submit" class="btn btn-primary">Soumettre</button>
-				{{ form_end(categoryFilterForm) }} #}
+				<button type="submit" class="mymenu_button btn h-100">Valider</button>
+				{{ form_end(categoryFilterForm) }}
 
 
 				<button type="button" class="mymenu_button btn btn-dark my-4 col-md-6" data-toggle="modal" data-target="#myModal">Ajouter une recette</button>

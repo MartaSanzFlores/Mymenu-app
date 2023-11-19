@@ -29,7 +29,6 @@ class RecipeController extends AbstractController
             ->add('name', TextType::class, [
                 'label' => false,
                 'required' => false, // Le champ n'est pas obligatoire
-                'allow_extra_fields' => true,
                 'attr' => [
                     'placeholder' => 'Ex: poulet, tarte, soupe...',
                 ],
@@ -70,15 +69,15 @@ class RecipeController extends AbstractController
             );
         } // TODO 
         // Si le formulaire de filtrage par catégorie est soumis et valide
-        elseif ($categoryFilterForm->isSubmitted() && $categoryFilterForm->isValid()) {
+        elseif ($categoryFilterForm->isSubmitted() && $categoryFilterForm->isValid() && $categoryFilterForm->get('Category')->getData() !== null) {
             $selectedCategory = $categoryFilterForm->get('Category')->getData();
 
             $pagination = $paginator->paginate(
-                $categoryRepository->paginationfindByCategory($selectedCategory),
+                $selectedCategory->getRecipes(),
                 $request->query->get('page', 1),
                 5
             );
-            // dd($pagination);
+            
         } else {
             // Sinon, on récupère toutes les recettes
             $pagination = $paginator->paginate(
