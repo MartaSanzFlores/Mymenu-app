@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Category;
+use App\Form\RecipeType;
 use Doctrine\ORM\EntityRepository;
 use App\Repository\RecipeRepository;
 use App\Repository\CategoryRepository;
@@ -24,18 +25,9 @@ class RecipeController extends AbstractController
         Request $request,
         PaginatorInterface $paginator
     ): Response {
-        // Création du formulaire pour filtrage par nom de recette
-        $filterForm = $this->createFormBuilder()
-            ->add('name', TextType::class, [
-                'label' => false,
-                'required' => false, // Le champ n'est pas obligatoire
-                'attr' => [
-                    'placeholder' => 'Ex: poulet, tarte, soupe...',
-                ],
-            ])
-            ->setMethod('GET')
-            ->getForm();
 
+        // Création du formulaire pour filtrage par nom de recette
+        $filterForm = $this->createForm(RecipeType::class);
         $filterForm->handleRequest($request);
 
         // Création du formulaire pour filtrage par catégorie
@@ -67,7 +59,7 @@ class RecipeController extends AbstractController
                 $request->query->get('page', 1),
                 5
             );
-        } // TODO 
+        }
         // Si le formulaire de filtrage par catégorie est soumis et valide
         elseif ($categoryFilterForm->isSubmitted() && $categoryFilterForm->isValid() && $categoryFilterForm->get('Category')->getData() !== null) {
             $selectedCategory = $categoryFilterForm->get('Category')->getData();
