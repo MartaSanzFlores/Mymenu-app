@@ -48,7 +48,7 @@
 									<p class="card-text">{{ recipe.description|slice(0, 150) }}...</p>
 									<p class="card-text">
 										<small class="text-body-secondary">
-											<a class="link-secondary link-underline link-underline-opacity-0 p-0" href="recette.html">Click pour voir !</a>
+											<a class="link-secondary link-underline link-underline-opacity-0 p-0" href="{{ path('app_recipe_show', {'id': recipe.id}) }}">Click pour voir !</a>
 										</small>
 									</p>
 								</div>
