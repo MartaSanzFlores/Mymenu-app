@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Entity\Category;
 use App\Entity\Recipe;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -21,28 +22,27 @@ class RecipeRepository extends ServiceEntityRepository
         parent::__construct($registry, Recipe::class);
     }
 
-//    /**
-//     * @return Recipe[] Returns an array of Recipe objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('r.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+   /**
+    * doctrine query to paginate recipes list
+    */
+   public function paginationQuery()
+   {
+       return $this->createQueryBuilder('r')
+           ->orderBy('r.id', 'ASC')
+           ->getQuery()
+       ;
+   }
 
-//    public function findOneBySomeField($value): ?Recipe
-//    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+    /**
+    * doctrine query to find recipe by name
+    */
+    public function paginationfindByName($submitName)
+    {
+        return $this->createQueryBuilder('r')
+            ->where('r.name LIKE :submitName')
+            ->setParameter('submitName', '%'.$submitName.'%')
+            ->getQuery()
+        ;
+    }
+
 }

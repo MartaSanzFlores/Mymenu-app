@@ -70,7 +70,7 @@ a { padding: 25%;
     background-color: #0C532B;
     color: #ffff;
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .mymenu_button:hover {
@@ -109,6 +109,34 @@ a { padding: 25%;
 
 .mymenu_link {
     color: #4d4a4a;
+}
+
+.page-link{
+    color: #0C532B;
+}
+
+.page-link:hover{
+    background-color: #0C532B;
+    color: #eeeeee;
+}
+
+.active>.page-link{
+    background-color: #7fb898 !important;
+    border: solid #0C532B 1px;
+}
+
+#form_name{
+    border: solid rgb(207, 202, 202) 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 3%;
+}
+
+#form_Category{
+    border: solid rgb(207, 202, 202) 1px;
+    border-radius: 5px;
+    padding: 3%;
+    width: 100%;
 }
 
 
