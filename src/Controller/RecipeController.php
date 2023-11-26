@@ -99,5 +99,17 @@ class RecipeController extends AbstractController
             'steps' => $steps
         ]);
     }
+
+    #[Route('/recipes/new', name: 'app_recipe_new', methods: ['GET'])]
+    public function new(): Response 
+    {
+        $recipe = new Recipe();
+
+
+       
+
+        return $this->render('recipe/show.html.twig', [
+        ]);
+    }
 }
 
